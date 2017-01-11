@@ -21,7 +21,7 @@ namespace TeduShop.Model.Models
         public string Alias { get; set; }
 
         [Required]
-        public int CategoriesID { get; set; }
+        public int CategoryID { get; set; }
 
         [MaxLength(256)]
         public string Image { get; set; }
@@ -36,6 +36,6 @@ namespace TeduShop.Model.Models
         public int? ViewCount { get; set; }
 
         [ForeignKey("CategoryID")]
-        public virtual PostCategory PostCategory { get; set; }
+        public virtual PostCategory PostCategories { get; set; }
     }
 }

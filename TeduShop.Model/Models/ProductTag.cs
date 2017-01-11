@@ -7,12 +7,14 @@ namespace TeduShop.Model.Models
     public class ProductTag
     {
         [Key]
+        [Column(Order = 1)]
         public int ProductID { get; set; }
 
         [Key]
-        [Column(TypeName = "varchar")]
+        [Column(Order = 2, TypeName = "varchar")]
         [MaxLength(50)]
-        public int TagID { get; set; }
+        
+        public string TagID { get; set; }
 
         [ForeignKey("ProductID")]
         public virtual Product Products { get; set; }

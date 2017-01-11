@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace TeduShop.Model.Models
 {
     [Table("SupportOnlines")]
-    public class SupportOnlines
+    public class SupportOnline
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -32,7 +32,6 @@ namespace TeduShop.Model.Models
         [MaxLength(50)]
         public string Facebook { get; set; }
 
-        [MaxLength(50)]
         public bool Status { get; set; }
 
         public int? DisplayOrder { get; set; }

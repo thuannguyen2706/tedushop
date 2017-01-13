@@ -24,7 +24,7 @@ namespace TeduShop.Model.Models
         [MaxLength(500)]
         public string Description { get; set; }
 
-        public string ParentID { get; set; }
+        public int ParentID { get; set; }
         public int DisplayOrder { get; set; }
 
         [MaxLength(256)]
